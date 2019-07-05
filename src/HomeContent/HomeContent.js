@@ -61,7 +61,7 @@ class HomeContent  extends React.Component {
                     <Select value = {this.props.langParams.language} options={this.props.langs} onChange={this.props.selectChange} />
                 </div>
                 <div>
-                    <h2>{this.props.langParams.h1}</h2>
+                    <h2>{this.props.langParams.h1 + ' 5.0'}</h2>
                     <Search langParams = {this.props.langParams} onChange={this.onChangeInputHandler} result_videos={this.state.result_videos} string_search={this.state.string_search}/>
                     <div>
                         <div className="left_sidebar">
@@ -73,10 +73,12 @@ class HomeContent  extends React.Component {
                             <div className="sideber_item">Video 5</div>
                         </div>
                         <div className="player">
-                            <h1>Главное видео</h1>
+                            <h2>Главное видео</h2>
                         </div>
                     </div>
                 </div>
+
+                <h1 style={{color: 'red', fontSize: '40px'}}>{this.props.langParams.notice}</h1>
             </div>
         );
     }

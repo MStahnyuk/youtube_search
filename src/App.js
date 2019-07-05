@@ -7,16 +7,18 @@ import './App.css';
 
 var langParamsArray = [
     {
+        'notice': 'Stasyan, ne zahodi, ya ishche ne dorobiv, ahahaha) Mojesh posuk potestit',
         'language': 'eng',
-        'h1': 'YouTube video',
+        'h1': 'YouTube video version',
         'history_title': 'Watch History',
         'placeholder': 'Search on YouTube',
         'isDefault': true,
         'votes': 'Votes'
     },
     {
+        'notice': 'Стасян, петух, не заходь, я ще не доробив, ахпхах) Можеш пошук потестить',
         'language': 'ru',
-        'h1': 'Видео с YouTube',
+        'h1': 'Видео с YouTube версия',
         'history_title': 'Смотреть Историю',
         'placeholder': 'Поиск на YouTube',
         'isDefault': false,
