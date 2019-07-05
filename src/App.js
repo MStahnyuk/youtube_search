@@ -11,14 +11,16 @@ var langParamsArray = [
         'h1': 'YouTube video',
         'history_title': 'Watch History',
         'placeholder': 'Search on YouTube',
-        'isDefault': true
+        'isDefault': true,
+        'votes': 'Votes'
     },
     {
         'language': 'ru',
         'h1': 'Видео с YouTube',
         'history_title': 'Смотреть Историю',
         'placeholder': 'Поиск на YouTube',
-        'isDefault': false
+        'isDefault': false,
+        'votes': 'Лайков'
     }
 ];
 
