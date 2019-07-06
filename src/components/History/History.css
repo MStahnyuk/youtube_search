@@ -1,0 +1,23 @@
+.sidebar {
+  width: 400px;
+}
+.sidebar h2 {
+  text-align: center;
+}
+.sidebar .items {
+  border: 1px solid #E2E2E2;
+  overflow-y: scroll;
+  max-height: 360px;
+  margin: 20px;
+}
+.sidebar .items .item {
+  position: relative;
+}
+.history_item .details {
+  margin: 0 0 3px;
+}
+.history_item .details h4,
+.history_item .details div {
+  font-size: 14px;
+  line-height: 1.4;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Delete.css';
 
 class Delete extends React.Component {
     render() {

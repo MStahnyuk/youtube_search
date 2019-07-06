@@ -1,6 +1,8 @@
 import React from 'react';
 import img_eng from '../../img/eng_96.png';
 import img_ru from '../../img/ru_96.png';
+import './LangContent.css';
+
 class LangsContent  extends React.Component {
     render() {
         return (

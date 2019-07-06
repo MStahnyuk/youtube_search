@@ -1,0 +1,13 @@
+.select .options {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: white;
+  border: 1px solid #E2E2E2;
+  margin-top: 5px;
+}
+.select .options .option {
+  border: none;
+  border-radius: 0;
+}

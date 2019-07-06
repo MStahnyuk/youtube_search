@@ -1,5 +1,6 @@
 import React from 'react';
 import Option from './Option/Option';
+import './Select.css';
 
 class Select extends React.Component {
     constructor(props) {
@@ -18,14 +19,6 @@ class Select extends React.Component {
 
         this.state = {
             isActive: !this.state.isActive
-        }
-    }
-
-    getClass = () => {
-        if (this.state.isActive) {
-            return 'active';
-        } else {
-            return null;
         }
     }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Search.css';
 import SearchInput from './SearchInput/SearchInput';
 import SearchResult from './SearchResult/SearchResult';
 

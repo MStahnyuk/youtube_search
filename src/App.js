@@ -1,9 +1,9 @@
 import React from 'react';
-// import logo from './logo.svg';
 import {Route, Redirect} from 'react-router-dom';
 import LangsContent from './pages/LangsContent/LangsContent';
 import HomeContent from './pages/HomeContent/HomeContent';
 import './App.css';
+import './media.css';
 
 var langParamsArray = [
     {
@@ -95,7 +95,6 @@ class App extends React.Component {
     //functions work with languages and redirect END
 
     render() {
-        //localStorage.clear();
         return (
             <div className="App">
                 <Route path="/langs" exact  render={() => <LangsContent changeLang={this.changeLangHandler}/>} />

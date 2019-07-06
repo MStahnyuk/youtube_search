@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchResultItem from './SearchResultItem/SearchResultItem';
+import './SearchResult.css'
 
 class SearchResult extends React.Component {
     renderResultVideos = () => {
@@ -15,7 +16,6 @@ class SearchResult extends React.Component {
         } else {
             return null;
         }
-
     }
 
     render() {

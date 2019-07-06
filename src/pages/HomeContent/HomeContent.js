@@ -2,23 +2,17 @@ import React from 'react';
 import Select from '../../components/Select/Select';
 import Player from '../../components/Player/Player';
 import History from '../../components/History/History'
-// import SearchInput from '../components/Search/SearchInput/SearchInput';
-// import SearchResult from '../components/Search/SearchResult/SearchResult';
 import Search from "../../components/Search/Search";
 
-const API_KEY = "AIzaSyD3TOhK_fjvDI3HC56mbqjWvAeaUND2S8M"; //API_KEY 1
-//const API_KEY = "AIzaSyDMQ0y1wTNoWGAyqYl0eZgyWx5HVRNDtT0"; //API_KEY 2
-//const API_KEY = "AIzaSyCsrhf7F21bK63ASWOtaRyhoce9m6TIs0Q"; //API_KEY 3
-const max_results = 2;
-
-
+const API_KEY = "AIzaSyD3TOhK_fjvDI3HC56mbqjWvAeaUND2S8M";
+const max_results = 5;
 
 class HomeContent  extends React.Component {
     constructor(props) {
         super(props);
         let history_videos = [];
         let active_video_id = '';
-        if(localStorage["history_videos"]) {
+        if(localStorage["history_videos"] && localStorage["history_videos"] !== '[]') {
             history_videos = JSON.parse(localStorage["history_videos"]);
             active_video_id = history_videos[0].id;
         }
@@ -41,8 +35,6 @@ class HomeContent  extends React.Component {
             result_videos: array
         });
     }
-
-
 
     //function work with video START
     onChangeInputHandler = async (event) => {
@@ -90,8 +82,6 @@ class HomeContent  extends React.Component {
 
         localStorage["history_videos"] = JSON.stringify(arrayVideos);
 
-        console.log(arrayVideos);
-
         this.setState({
             string_search: '',
             result_videos: '',
@@ -102,7 +92,6 @@ class HomeContent  extends React.Component {
 
     onClickDeleteHandler = (event) => {
         const delete_video_id = event.target.getAttribute('video-id');
-        console.log(delete_video_id);
         const history_videos = JSON.parse(localStorage["history_videos"]);
         history_videos.forEach( (video, index, history_videos) => {
             if(video.id === delete_video_id) {
@@ -120,9 +109,6 @@ class HomeContent  extends React.Component {
             active_video_id: event.currentTarget.getAttribute('video-id')
         });
     }
-
-
-
     //function work with video END
 
     render() {
@@ -131,12 +117,10 @@ class HomeContent  extends React.Component {
                 <div className="row_top">
                     <Search langParams = {this.props.langParams} onChange={this.onChangeInputHandler} result_videos={this.state.result_videos} string_search={this.state.string_search} onClick={this.clickResultsHandler}/>
                     <Select value={this.props.langParams.language} options={this.props.langs} onChange={this.props.selectChange}/>
-
                 </div>
                 <div className={'content'}>
                     <History history_videos={this.state.history_videos} onClickDelete={this.onClickDeleteHandler} onClickActive={this.onClickActiveHandler} langParams={this.props.langParams}/>
                     <Player video_id={this.state.active_video_id} langParams={this.props.langParams}/>
-
                 </div>
             </div>
         );

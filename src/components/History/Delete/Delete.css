@@ -1,0 +1,12 @@
+.delete {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 16px 10px;
+  cursor: pointer;
+}
+.delete:hover {
+  text-decoration: underline;
+}

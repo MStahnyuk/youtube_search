@@ -1,5 +1,6 @@
 import React from 'react';
 import Delete from './Delete/Delete';
+import './History.css';
 
 class History extends React.Component {
 
@@ -12,8 +13,7 @@ class History extends React.Component {
         if(videos !== '') {
             return videos.map((video, index) => {
                     return (
-                        //<div key={index+1}>{index+1 + '. ' + video.title}</div>
-                        <div key={index+1} className="item">
+                       <div key={index+1} className="item">
                             <div className={'history_item'} video-id={video.id} onClick={this.props.onClickActive}>
                                 <div className="img_wrap">
                                     <img src={video.img} alt=''/>
