@@ -1,0 +1,16 @@
+.langs_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.langs_content .langs {
+    display: flex;
+}
+
+.langs_content .langs .lang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}

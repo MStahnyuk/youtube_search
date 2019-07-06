@@ -13,16 +13,18 @@ var langParamsArray = [
         'history_title': 'Watch History',
         'placeholder': 'Search on YouTube',
         'isDefault': true,
-        'votes': 'Votes'
+        'votes': 'Votes',
+        'delete': 'Delete',
     },
     {
         'notice': 'Стасян, петух, не заходь, я ще не доробив, ахпхах) Можеш пошук потестить',
         'language': 'ru',
         'h1': 'Видео с YouTube версия',
-        'history_title': 'Смотреть Историю',
+        'history_title': 'История просмотров',
         'placeholder': 'Поиск на YouTube',
         'isDefault': false,
-        'votes': 'Лайков'
+        'votes': 'Лайков',
+        'delete': 'Удалить'
     }
 ];
 
@@ -52,7 +54,7 @@ class App extends React.Component {
     }
 
     localStorageChangeHandler = elem => {
-        localStorage["lang"] = elem.target.getAttribute('data-value');
+        localStorage["lang"] = elem.currentTarget.getAttribute('data-value');
         this.setState({
             activeLang:localStorage["lang"]
         })
