@@ -43,7 +43,7 @@
             <entry file="file://$PROJECT_DIR$/src/pages/HomeContent/HomeContent.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="345">
-                  <caret line="138" selection-start-line="138" selection-end-line="138" />
+                  <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="139" selection-end-column="15" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -100,8 +100,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/App.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="379">
-                  <caret line="219" column="14" selection-start-line="219" selection-start-column="14" selection-end-line="219" selection-end-column="14" />
+                <state relative-caret-position="192">
+                  <caret line="222" column="23" selection-start-line="222" selection-start-column="23" selection-end-line="222" selection-end-column="23" />
                   <folding>
                     <element signature="e#290#296#0" />
                     <element signature="e#1465#1528#0" />
@@ -178,8 +178,8 @@
         <option value="$PROJECT_DIR$/src/components/History/Delete/Delete.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/History/History.js" />
-        <option value="$PROJECT_DIR$/src/App.less" />
         <option value="$PROJECT_DIR$/src/pages/HomeContent/HomeContent.js" />
+        <option value="$PROJECT_DIR$/src/App.less" />
       </list>
     </option>
   </component>
@@ -352,12 +352,12 @@
       <workItem from="1562251097704" duration="6472000" />
       <workItem from="1562277409200" duration="592000" />
       <workItem from="1562307204276" duration="29663000" />
-      <workItem from="1562402363654" duration="41623000" />
+      <workItem from="1562402363654" duration="41898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129329000" />
+    <option name="totallyTimeSpent" value="129604000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -370,7 +370,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19440243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -387,7 +386,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" weight="0.2782324" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" visible="true" weight="0.2782324" />
       <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -561,23 +560,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.less">
+    <entry file="file://$PROJECT_DIR$/src/pages/HomeContent/HomeContent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="219" column="14" selection-start-line="219" selection-start-column="14" selection-end-line="219" selection-end-column="14" />
+        <state relative-caret-position="345">
+          <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="139" selection-end-column="15" />
           <folding>
-            <element signature="e#290#296#0" />
-            <element signature="e#1465#1528#0" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/HomeContent/HomeContent.js">
+    <entry file="file://$PROJECT_DIR$/src/App.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="138" selection-start-line="138" selection-end-line="138" />
+        <state relative-caret-position="192">
+          <caret line="222" column="23" selection-start-line="222" selection-start-column="23" selection-end-line="222" selection-end-column="23" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#290#296#0" />
+            <element signature="e#1465#1528#0" />
           </folding>
         </state>
       </provider>

@@ -6,7 +6,7 @@ class Player extends React.Component {
         if(video_id !== '') {
             return (
                 <iframe title={video_id} id="player" type="text/html" width="640" height="360"
-                        src={"http://www.youtube.com/embed/" + video_id }
+                        src={"https://www.youtube.com/embed/" + video_id }
                         frameBorder="0"></iframe>
             )
         }
