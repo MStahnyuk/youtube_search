@@ -1,30 +1,31 @@
 import React from 'react';
 // import logo from './logo.svg';
 import {Route, Redirect} from 'react-router-dom';
-import LangsContent from './LangsContent/LangsContent';
-import HomeContent from './HomeContent/HomeContent';
+import LangsContent from './pages/LangsContent/LangsContent';
+import HomeContent from './pages/HomeContent/HomeContent';
 import './App.css';
 
 var langParamsArray = [
     {
-        'notice': 'Stasyan, ne zahodi, ya ishche ne dorobiv, ahahaha) Mojesh posuk potestit',
-        'language': 'eng',
-        'h1': 'YouTube video version',
+        'language': 'en',
+        'player_title': 'Watch video',
         'history_title': 'Watch History',
         'placeholder': 'Search on YouTube',
         'isDefault': true,
         'votes': 'Votes',
         'delete': 'Delete',
+        'views': 'Views'
     },
     {
-        'notice': 'Стасян, петух, не заходь, я ще не доробив, ахпхах) Можеш пошук потестить',
         'language': 'ru',
-        'h1': 'Видео с YouTube версия',
+        'player_title': 'Просмотр видео',
         'history_title': 'История просмотров',
         'placeholder': 'Поиск на YouTube',
         'isDefault': false,
         'votes': 'Лайков',
-        'delete': 'Удалить'
+        'delete': 'Удалить',
+        'views': 'Просмотров'
+
     }
 ];
 
@@ -47,16 +48,16 @@ class App extends React.Component {
     }
     //functions work with languages and redirect START
     selectChangeHandler = event => {
-        localStorage["lang"] = event.target.value;
+        localStorage["lang"] = event.target.getAttribute('data-value');
         this.setState({
             activeLang: localStorage["lang"]
         });
     }
 
-    localStorageChangeHandler = elem => {
+    changeLangHandler = elem => {
         localStorage["lang"] = elem.currentTarget.getAttribute('data-value');
         this.setState({
-            activeLang:localStorage["lang"]
+            activeLang: localStorage["lang"]
         })
     }
 
@@ -65,8 +66,6 @@ class App extends React.Component {
             if(this.state.activeLang === defaultLang) {
                 if(window.location.href !== '/') {
                     return <Redirect to={"/"} />
-                } else {
-                    return <h2>Все норм</h2>
                 }
             } else {
                 return <Redirect to={"/"+this.state.activeLang} />
@@ -96,9 +95,10 @@ class App extends React.Component {
     //functions work with languages and redirect END
 
     render() {
+        //localStorage.clear();
         return (
             <div className="App">
-                <Route path="/langs" exact  render={() => <LangsContent  localStorageChange={this.localStorageChangeHandler}/>} />
+                <Route path="/langs" exact  render={() => <LangsContent changeLang={this.changeLangHandler}/>} />
                 {this.renderRouteHome()}
                 {this.redirect()}
             </div>

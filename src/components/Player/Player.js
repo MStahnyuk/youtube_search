@@ -15,9 +15,13 @@ class Player extends React.Component {
     render() {
         const video_id = this.props.video_id;
         return (
-            <div className="player" style={{border: "1px solid black", margin: "20px"}}>
-                {this.isIframe(video_id)}
+            <div className={'player_wrap'}>
+                <h2>{this.props.langParams.player_title}</h2>
+                <div className="player">
+                    {this.isIframe(video_id)}
+                </div>
             </div>
+
         )
     }
 }

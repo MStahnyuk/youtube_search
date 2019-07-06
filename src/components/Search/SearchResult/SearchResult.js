@@ -2,13 +2,6 @@ import React from 'react';
 import SearchResultItem from './SearchResultItem/SearchResultItem';
 
 class SearchResult extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            votes: '1'
-        }
-    }
-
     renderResultVideos = () => {
         const result_videos = this.props.result_videos;
         const string_search = this.props.string_search;
