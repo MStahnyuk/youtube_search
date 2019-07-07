@@ -6,25 +6,37 @@ class Select extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isActive: false
+            isActive: false,
+            select_classes: 'select'
         }
     }
 
     onClickHandler = (elem) => {
-        if(!this.state.isActive) {
-            elem.currentTarget.className = 'select active';
-        } else {
-            elem.currentTarget.className = 'select';
-        }
 
-        this.state = {
-            isActive: !this.state.isActive
+
+        this.setState({
+            isActive: !this.state.isActive,
+            //select_classes: 'select active'
+        })
+
+        let select_classes = '';
+        if(!this.state.isActive) {
+            select_classes = 'select active'
+            this.setState ({
+                select_classes: select_classes
+            })
+        } else {
+            select_classes = 'select'
+
         }
+        this.setState({
+            select_classes: select_classes
+        })
     }
 
     render() {
         return (
-            <div className={'select'} value={this.props.value} onClick={this.onClickHandler}>
+            <div className={this.state.select_classes} value={this.props.value} onClick={this.onClickHandler}>
                 <div className={'option'} data-value={this.props.value}>{this.props.value}</div>
                 <div className="options">
                     {this.props.options.map((option, index) => {

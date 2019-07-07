@@ -4,7 +4,7 @@ import Player from '../../components/Player/Player';
 import History from '../../components/History/History'
 import Search from "../../components/Search/Search";
 
-const API_KEY = "AIzaSyD3TOhK_fjvDI3HC56mbqjWvAeaUND2S8M";
+const API_KEY = "AIzaSyC9lF6ffpMxm_utTrNe3IJ41Y5z5dgI8A0";
 const max_results = 5;
 
 class HomeContent  extends React.Component {

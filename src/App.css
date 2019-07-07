@@ -46,3 +46,17 @@
   margin-top: 80px;
   display: flex;
 }
+.container {
+  width: 800px;
+  padding: 0 20px;
+  border-left: 5px double #EEEEEE;
+  border-right: 5px double #EEEEEE;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  text-indent: 30px;
+}
